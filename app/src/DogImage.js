@@ -8,9 +8,15 @@ const DogImage = (props) => {
     return (
         <div>
             {props.isLoading ? (
-                <Loader type="Circles" color="#00BFFF" height={80} width={80} />
+                <Loader
+                    type="Circles"
+                    color="#954F6F"
+                    height={80}
+                    width={80}
+                    timeout={4000}
+                />
             ) : (
-                <div>
+                <div className="photoandbutton">
                     <img src={props.dogUrl} alt="" />
                     <button
                         onClick={() => {
